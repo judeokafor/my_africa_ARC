@@ -1,0 +1,91 @@
+<header class="main-header navbar-fixed">
+  <!-- navbar section -->
+  <nav class="transparent">
+    <div class="nav-container">
+      <div class="nav-wrapper">
+        <a [routerLink]="['/']" routerLinkActive="router-link-active" class="brand-logo"><span class="logo-design white-text">MyAfrica</span></a>
+        <a href="#" data-activates="mobile-nav" class="right show-on-medium-and-down button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <a [routerLink]="['/']" routerLinkActive="router-link-active" class="white-text">Home</a>
+          </li>
+          <li>
+            <a [routerLink]="['/aboutus']" routerLinkActive="router-link-active" class="white-text">About Us</a>
+          </li>
+          <li>
+            <a [routerLink]="['/organization']" routerLinkActive="router-link-active" class="white-text">Organization</a>
+          </li>
+          <li>
+            <a [routerLink]="['/members']" routerLinkActive="router-link-active" class="white-text">Members</a>
+          </li>
+          <li>
+            <a [routerLink]="['/Blog']" routerLinkActive="router-link-active" class="white-text">Blog</a>
+          </li>
+          <li>
+            <a class="white-text" [routerLink]="['/event']" routerLinkActive="router-link-active">Event</a>
+          </li>
+          <li>
+            <a class="white-text" [routerLink]="['/allquotes']" routerLinkActive="router-link-active">Contact Us</a>
+          </li>
+        </ul>
+        <!-- sidebar -->
+        <ul class="side-nav" id="mobile-nav">
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <a [routerLink]="['/']" routerLinkActive="router-link-active" class="white-text">Home</a>
+          </li>
+          <li>
+            <a [routerLink]="['/aboutus']" routerLinkActive="router-link-active" class="white-text">About Us</a>
+          </li>
+          <li>
+            <a [routerLink]="['/organization']" routerLinkActive="router-link-active" class="white-text">Organization</a>
+          </li>
+          <li>
+            <a [routerLink]="['/members']" routerLinkActive="router-link-active" class="white-text">Members</a>
+          </li>
+          <li>
+            <a [routerLink]="['/Blog']" routerLinkActive="router-link-active" class="white-text">Blog</a>
+          </li>
+          <li>
+            <a class="white-text" [routerLink]="['/event']" routerLinkActive="router-link-active">Event</a>
+          </li>
+          <li>
+            <a class="white-text" [routerLink]="['/allquotes']" routerLinkActive="router-link-active">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- showcase section -->
+  <section class="section section-showcase">
+    <div class="nav-container">
+      <div class="row">
+        <div class="col m7">
+          <div class="nav-container">
+            <img class="responsive-img my-image-down" src="../../../assets/images/flags.svg" alt="flags" onerror="this.src='../../../assets/resort1.jpg'">
+            <div class="nav-container">
+              <img class="responsive-img my-image-up" src="../../../assets/images/undraw_before_dawn_bqrj.svg" alt="tree yellow" onerror="this.src='../../../assets/resort2.jpg'">
+            </div>
+          </div>
+        </div>
+        <div class="col m5 white-text text-group">
+          <h3 class="header-text">
+            Africa Regional Commitee
+          </h3>
+          <p class="head-paragragh">
+            The perfect place for country developement, financial analysis and human accountability.
+          </p>
+          <a [routerLink]="['/userinfo']" routerLinkActive="router-link-active"  class="btn our-green mr-2 rounded">Learn More</a>
+          <button class="btn our-yellow rounded">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</header>

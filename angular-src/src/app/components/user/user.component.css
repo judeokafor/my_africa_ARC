@@ -1,0 +1,8 @@
+.section-user-card{
+    position: relative;
+    margin-top: -2rem;
+    z-index : 3;
+}
+.user-card{
+    min-height: 10vh;
+}

@@ -1,0 +1,37 @@
+<section class="section section-todos">
+  <div class="row">
+    <div class="col m6">
+      <div class="materialert success" role="alert" *ngIf="error.show == true">
+        <div class="material-icons">check</div>
+        {{error.msg}}
+      </div>
+      <h5 class="title">Quick Todo <i class="material-icons">assignment_turned_in</i></h5>
+      <form class="form" (ngSubmit)="onSubmit()">
+        <input type="text" name="title" [(ngModel)]="title" placeholder="Add Todo....">
+        <button type="submit" class="btn our-green waves-effect waves-light black-text">Add<i class="material-icons black-text right">
+            today
+          </i></button>
+      </form>
+      <ul *ngFor="let todo of todos" class="collection">
+        <li class="collection-item">
+          <div [ngClass]="{'is-complete': todo.completed}">
+            {{todo.title}}
+            <a href="#!" role="button" type="submit" (click)="onDelete(todo)" class="secondary-content red-text">
+              <i class="material-icons">delete</i>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <button [routerLink]="['/other-todos']" routerLinkActive="router-link-active" class="btn our-green rounded black-text truncate">View
+        More</button>
+    </div>
+    <div class="col m6">
+      <div class="card hoverable card-fixed-button">
+        <div class="card-image">
+          <div><img class="responsive-img" src="../../../assets/resort1.jpg"></div>
+          <a class="btn-floating btn-large floating waves-effect round waves-light red"><i class="material-icons large center">arrow_forward</i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

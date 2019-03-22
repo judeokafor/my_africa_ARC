@@ -1,0 +1,21 @@
+<section class="section section-user-details center">
+  <div class="row">
+
+    <div *ngFor="let photo of photos" class="card">
+      <div class="col s12 m3">
+        <div class="card-image waves-effect waves-block waves-light responsive-img">
+          <img class="activator responsive-img" src="{{photo.thumbnailUrl}}">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4 truncate">{{photo.title}}<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">Work With Us</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4 truncate">{{photo.title}}<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

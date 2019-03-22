@@ -1,0 +1,24 @@
+.section-todo{
+    min-height: 50vh;
+}
+.form{
+    display: flex!important;
+}
+.form input[type = 'text']{
+flex:10!important;
+}
+.form input button{
+    flex: 2!important;
+}
+.floating {
+    position: absolute!important;
+    bottom: 8%;
+    right: 5%;
+    /* height: 5rem;
+    width: 5rem; */
+    /* border-radius: 50%; */
+    /* margin-bottom: 1rem; */
+}
+.card-fixed-button{
+    position: relative;
+}

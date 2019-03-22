@@ -1,0 +1,33 @@
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .flag-container{
+    max-width: 80px;
+    max-height: 70px;
+  }
+  .country{
+    min-height: 35vh;
+  }
+  section{
+    min-height: 80vh;
+  }
+  .card-content{
+    min-height: 30vh;
+  }
+  .flag-card{
+    position: relative;
+    margin-bottom: -2.5rem;
+    z-index: 1;
+  }
+  .comment-card{
+    position: relative;
+    z-index: -1;
+  }
+  
+  /* Our Blue  = #385B92
+
+Our Yellow = #F1C40F
+
+Our Greywhite = #ECF0F1 */
